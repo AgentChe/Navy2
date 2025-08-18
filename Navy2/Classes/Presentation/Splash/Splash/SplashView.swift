@@ -51,8 +51,8 @@ private extension SplashView {
         ])
         
         NSLayoutConstraint.activate([
-            nameLabel.leadingAnchor.constraint(equalTo: container.leadingAnchor, constant: 32.scale),
-            nameLabel.trailingAnchor.constraint(equalTo: container.trailingAnchor, constant: -32.scale),
+            nameLabel.leadingAnchor.constraint(equalTo: container.leadingAnchor, constant: 16.scale),
+            nameLabel.trailingAnchor.constraint(equalTo: container.trailingAnchor, constant: -16.scale),
             nameLabel.topAnchor.constraint(equalTo: container.topAnchor, constant: 116.scale)
         ])
         
@@ -104,7 +104,6 @@ private extension SplashView {
             .textAlignment(.center)
         
         let view = UILabel()
-        view.numberOfLines = 0
         view.attributedText = "Splash.Name".localized.attributed(with: attrs)
         view.translatesAutoresizingMaskIntoConstraints = false
         container.addSubview(view)
